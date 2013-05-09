@@ -1,0 +1,198 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: #FEFEFE;
+	color: #555;
+	font: 1.5em/1.3 'Titillium Web', Helvetica, Arial, san-serif;
+	padding: 2em;
+
+	> * {
+		width: 70%;
+		margin: 0 auto;
+		padding-left: 10em;
+		max-width: 550px;
+	}
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+header {
+	position: relative;
+
+	img {
+		position: absolute;
+		left: 0em;
+		top: 0;
+		border: 5px solid #DDD;
+		border-radius: 2em;
+
+		transform-style: preserve-3d;
+		transition:all .5s ease-in-out;
+
+		&:hover {
+			perspective: 800px;
+			perspective-origin: 50% 100px;
+			transform:rotateY(180deg);
+		}
+	}
+
+	h1 {
+		margin-bottom: 1em;
+
+		span {
+			color: #CCC;
+		}
+	}
+
+	span {
+		color: #FF0000;
+	}
+
+	.icon-heart {
+		position: relative;
+	}
+
+	.icon-heart:before,
+	.icon-heart:after {
+		position: absolute;
+		top: 8px;
+		font-size: 8px;
+		opacity: 0;
+	}
+
+	.icon-heart:hover:before {
+		left: 12px;
+		animation: hearts .5s infinite;
+	}
+
+	.icon-heart:hover:after {
+		left: 6px;
+		animation: hearts .75s infinite;
+	}
+}
+
+@include keyframes(hearts) {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: -16px;
+		left: 14px;
+	}
+}
+
+ul {
+	margin: 0em 0 1em;
+	padding: 0;
+	position: absolute;
+	left: 0em;
+	top: 115px;
+}
+
+li {
+	list-style-type: none;
+	margin: 0 0 .25em 0;
+
+	&:before {
+		color: #CCC;
+	}
+
+	&:hover:before {
+		color: #000;
+		transition: color .2s ease-in;
+	}
+
+	&.icon-linkedin:hover:before {
+		color: $linkedin;
+	}
+
+	&.icon-twitter:hover:before {
+		color: $twitter;
+	}
+}
+
+li a {
+	margin-left: .25em;
+}
+
+dl {
+	float: left;
+	width: 30%;
+	max-width: 170px;
+}
+
+dl + dl {
+	margin-left: 3%;
+}
+
+dt {
+	font-weight: bold;
+	margin: 0em 0 .5em;
+}
+
+.skills {
+	width: 45%;
+	max-width: 250px;
+}
+
+.technologies {
+	width: 15%;
+	max-width: 100px;
+}
+
+dd {
+	margin: .2em 0;
+}
+
+@media (max-width: 42em) {
+	body {
+		padding: 1em;
+
+		> * {
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+
+	dl {
+		width: 100%;
+		float: none;
+		margin-top: 1em;
+	}
+
+	dl + dl {
+		margin-left: 0;
+	}
+
+	header {
+		img,
+		ul {
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+
+		img {
+			margin-bottom: 1em;
+		}
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	ul li {
+		display: inline-block;
+		margin: .2em;
+	}
+}
