@@ -280,7 +280,7 @@ dd {
   margin: 0.2em 0;
 }
 
-@media (max-width: 42em) {
+@media (max-width: 520px) {
   /* line 158, sass/home.scss */
   body {
     padding: 1em;
