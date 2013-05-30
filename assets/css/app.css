@@ -76,7 +76,7 @@ html {
 body {
   background: #FEFEFE;
   color: #555;
-  font: 1.5em/1.3 "Titillium Web", Helvetica, Arial, san-serif;
+  font: 1.5em/1.3 'Titillium Web', Helvetica, Arial, san-serif;
   padding: 2em;
 }
 /* line 11, sass/home.scss */
@@ -106,10 +106,10 @@ header img {
   position: absolute;
   left: 0em;
   top: 0;
-  border: 5px solid #dddddd;
+  border: 5px solid #DDD;
   border-radius: 2em;
   transform-style: preserve-3d;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 /* line 41, sass/home.scss */
 header img:hover {
@@ -144,12 +144,12 @@ header .icon-heart:after {
 /* line 72, sass/home.scss */
 header .icon-heart:hover:before {
   left: 12px;
-  animation: hearts 0.5s infinite;
+  animation: hearts .5s infinite;
 }
 /* line 77, sass/home.scss */
 header .icon-heart:hover:after {
   left: 6px;
-  animation: hearts 0.75s infinite;
+  animation: hearts .75s infinite;
 }
 
 @-webkit-keyframes hearts {
@@ -220,7 +220,7 @@ ul {
 /* line 102, sass/home.scss */
 li {
   list-style-type: none;
-  margin: 0 0 0.25em 0;
+  margin: 0 0 .25em 0;
 }
 /* line 106, sass/home.scss */
 li:before {
@@ -229,7 +229,7 @@ li:before {
 /* line 110, sass/home.scss */
 li:hover:before {
   color: #000;
-  transition: color 0.2s ease-in;
+  transition: color .2s ease-in;
 }
 /* line 115, sass/home.scss */
 li.icon-linkedin:hover:before {
@@ -260,7 +260,7 @@ dl + dl {
 /* line 138, sass/home.scss */
 dt {
   font-weight: bold;
-  margin: 0em 0 0.5em;
+  margin: 0em 0 .5em;
 }
 
 /* line 143, sass/home.scss */
@@ -277,7 +277,7 @@ dt {
 
 /* line 153, sass/home.scss */
 dd {
-  margin: 0.2em 0;
+  margin: .2em 0;
 }
 
 @media (max-width: 520px) {
@@ -303,26 +303,36 @@ dd {
     margin-left: 0;
   }
 
-  /* line 179, sass/home.scss */
+  /* line 178, sass/home.scss */
+  header h1 {
+    margin-bottom: 0;
+  }
+  /* line 183, sass/home.scss */
   header img,
   header ul {
     position: relative;
     left: 0;
     top: 0;
   }
-  /* line 185, sass/home.scss */
+  /* line 189, sass/home.scss */
   header img {
     margin-bottom: 1em;
   }
 
-  /* line 190, sass/home.scss */
+  /* line 194, sass/home.scss */
   ul {
     margin: 0;
   }
 
-  /* line 194, sass/home.scss */
+  /* line 198, sass/home.scss */
   ul li {
     display: inline-block;
     margin: .2em;
+  }
+
+  /* line 203, sass/home.scss */
+  .skills, .technologies {
+    width: 100%;
+    max-width: 100%;
   }
 }

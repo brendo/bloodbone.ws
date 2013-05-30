@@ -175,6 +175,10 @@ dd {
 	}
 
 	header {
+		h1 {
+			margin-bottom: 0;
+		}
+
 		img,
 		ul {
 			position: relative;
@@ -194,5 +198,10 @@ dd {
 	ul li {
 		display: inline-block;
 		margin: .2em;
+	}
+
+	.skills, .technologies {
+		width: 100%;
+		max-width: 100%;
 	}
 }
