@@ -2,7 +2,7 @@
 
 	$client_id = '8303da985ab84ee399334bfc0ab0628e';
 	$client_secret = '6c0bf320702c4d8eaf006bd547323cf5';
-	$redirect_uri = 'http://bloodbone.ws/oywtt/auth/';
+	$redirect_uri = 'http://bloodbone.ws/oywtt/';
 
 ?>
 
@@ -25,6 +25,8 @@
 			</div>
 		</div>
 
-		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js'></script>
+		<script src='assets/js/lib/zepto.min.js'></script>
+		<script src='assets/js/lib/angular.min.js'></script>
+		<script src='assets/js/app.js'></script>
 	</body>
 </html>
