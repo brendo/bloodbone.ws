@@ -21,7 +21,7 @@
 				<h1>Oh, you went there too?</h1>
 				<p>Compare your Instagram photo map with that of your friends.</p>
 
-				<a href='https://instagram.com/oauth/authorize/?client_id=<?=$client_id?>&redirect_uri=<?=$redirect_uri?>&response_type=token'>Connect</a>
+				<a href='https://instagram.com/oauth/authorize/?client_id=<?=$client_id?>&redirect_uri=<?=$redirect_uri?>&response_type=token&scope=relationships'>Connect</a>
 			</div>
 		</div>
 

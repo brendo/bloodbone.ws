@@ -22,9 +22,9 @@ var Instagram = {
 	api: function(type, endpoint, data, callback) {
 		var request = $.ajax({
 			type: type,
-			url: 'https://api.instagram.com/v1' + endpoint,
+			url: 'https://api.instagram.com/v1' + endpoint + '?access_token=' + Instagram.access_token,
 			data: data,
-			dataType: 'json',
+			dataType: 'jsonp',
 			success: callback,
 			error: function(xhr, type) {
 				console.log(type);
@@ -34,7 +34,7 @@ var Instagram = {
 };
 
 $(document).ready(function() {
-	var user = 'brendanabbott';
+	var user = 'self';
 
 	if(Instagram.isLoggedIn()) {
 		// Logged In
