@@ -144,29 +144,17 @@ header .icon-heart:after {
 /* line 72, sass/home.scss */
 header .icon-heart:hover:before {
   left: 12px;
+  -webkit-animation: hearts .5s infinite;
   animation: hearts .5s infinite;
 }
 /* line 77, sass/home.scss */
 header .icon-heart:hover:after {
   left: 6px;
+  -webkit-animation: hearts .75s infinite;
   animation: hearts .75s infinite;
 }
 
 @-webkit-keyframes hearts {
-  /* line 84, sass/home.scss */
-  0% {
-    opacity: 1;
-  }
-
-  /* line 87, sass/home.scss */
-  100% {
-    opacity: 0;
-    top: -16px;
-    left: 14px;
-  }
-}
-
-@-moz-keyframes hearts {
   /* line 84, sass/home.scss */
   0% {
     opacity: 1;
