@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="HandheldFriendly" content="True">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
 		<link href='assets/css/app.css' rel='stylesheet' type='text/css'>
 		<link href='https://plus.google.com/117379578565774200606' rel='author'>
 	</head>
@@ -17,7 +17,7 @@
 
 			<p>I live in Brisbane, Australia and want to create things that users <span class='icon-heart'>love</span>.</p>
 
-			<img src='http://www.gravatar.com/avatar/6be8e584a0f454ac2dc7600bdeaca7b7.png' alt='' />
+			<img src='https://www.gravatar.com/avatar/6be8e584a0f454ac2dc7600bdeaca7b7.png' alt='' />
 			<ul>
 				<li class='icon-stackoverflow'>
 					<a href='http://stackoverflow.com/users/brendo' title='I help' rel='me'>Stack Overflow</a>
